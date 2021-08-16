@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'materializecssform',
 ]
 
 MIDDLEWARE = [
@@ -128,7 +129,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-YELP_API_KEY = ''
+YELP_API_KEY = 'TnZKtN5QFvD7RVQrbo-LMREaDeu39l3GcQHwz8TJQmUSCD7AlGfDI9wPSab3q_JGEF0puqOr96KtlOtcEV6xCUxk6Q8SrPW3s0STsrmpv9VOLmL5EfVxOgrss08aYXYx'
 
 GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
 

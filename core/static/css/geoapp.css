@@ -1,0 +1,35 @@
+/*body, html {
+  height: 100%;
+}
+*/
+
+.gmap{
+    height: 400px;
+    width: 100%;
+}
+
+.parallax {
+  position: relative;
+  opacity: 0.65;
+  min-height: 100% !important;
+  background-size: cover;
+  background-image: url("../images/bg_colored.jpg");
+}
+
+.card-panel {
+    position: relative;
+    z-index: 1;
+    top: 30px;
+    opacity: 0.75 !important;
+    background: darkblue !important;
+}
+
+.btn {
+    color: darkblue;
+    opacity: 9999 !important;
+    z-index: 999999;
+}
+
+input[type='text'] {
+    color: white;
+}
