@@ -24,9 +24,8 @@
         minZoom: 3
     }).addTo(map);
 
-    {% for biz in itens.businesess %}
-        var marker = L.marker([ {{ biz.coordinates.latitude|safe }}, {{ biz.coordinnates.longetude|safe }} ]).addTo(map);
-
+    {% for biz in itens.businesses %}
+        var marker = L.marker([ {{ biz.coordinates.latitude | safe }}, {{ biz.coordinnates.longetude | safe }} ]).addTo(map);
         marker.bindPopup("<b>{{ biz.name }}>/b><br />{{biz.location.display_address.0}} {{ this.location.display_addrees.1 }}<br />{{ city }}").openPopup();
     {% endfor %}
 </script>
