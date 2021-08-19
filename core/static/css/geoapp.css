@@ -1,7 +1,6 @@
-/*body, html {
+body, html {
   height: 100%;
 }
-*/
 
 .gmap{
     height: 400px;
@@ -21,7 +20,13 @@
     z-index: 1;
     top: 30px;
     opacity: 0.75 !important;
-    background: darkblue !important;
+    background: #1a0a21 !important;
+}
+
+.card-title > h4,
+i.material-icons, #heltext,
+#text-info, #notFound {
+    color: aliceblue;
 }
 
 .btn {

@@ -2,7 +2,7 @@ import logging
 from random import randint
 from django.conf import settings
 from django.contrib.gis.geoip2 import GeoIP2
-# from django.contrib.gis.geoip2 import geoip2
+from django.contrib.gis.geoip2 import geoip2
 import requests
 from geoip2.errors import AddressNotFoundError
 
@@ -15,15 +15,9 @@ def yelp_search(keyword=None, location=None):
     }
 
     if keyword and location:
-        params = {
-            'term': keyword,
-            'location': location
-        }
+        params = {'term': keyword, 'location': location}
     else:
-        params = {
-            'term': 'Pizzaria',
-            'location': 'São Paulo'
-        }
+        params = {'term': 'Pizzaria', 'location': 'São Paulo'}
 
     r = requests.get(YELP_SEARCH_END_POINT, headers=headers, params=params)
     return r.json()

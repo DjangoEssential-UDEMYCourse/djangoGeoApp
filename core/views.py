@@ -13,7 +13,6 @@ class IndexView(View):
         _lang_ = translation.get_language()  # seleciona o idioma atraves do navegador
         itens = []
         city = None
-        location = city
 
         while not city:
             ret = get_client_data()
@@ -22,6 +21,7 @@ class IndexView(View):
 
         resource = request.GET.get('key', None)
         loc = request.GET.get('loc', None)
+        location = city
 
         context = {
             'city': city,
